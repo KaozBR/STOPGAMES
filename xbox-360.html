@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo Xbox 360 da StopGames.">
+    <title>Catálogo Xbox 360 | StopGames</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="catalog-page">
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
+
+    <header class="placeholder-header">
+      <a href="index.html" aria-label="Voltar ao início da StopGames">
+        <img class="header-logo" src="assets/stopgames-logo.png" alt="StopGames">
+      </a>
+      <a class="back-home" href="index.html">← Início</a>
+    </header>
+
+    <main class="catalogo product-catalog">
+      <section class="catalog-title" aria-labelledby="titulo-xbox">
+        <p class="home-label">STOPGAMES · XBOX 360</p>
+        <h1 id="titulo-xbox">Catálogo Xbox 360</h1>
+        <div class="catalog-price-callout xbox-price-callout" aria-label="Preço dos jogos de Xbox 360">
+          <div>
+            <span class="catalog-price-eyebrow">Todos os jogos de Xbox 360</span>
+            <strong>R$ 25,00 cada</strong>
+          </div>
+          <p><b>GTA V:</b> é necessário um pen drive de 16 GB.</p>
+        </div>
+      </section>
+
+      <section aria-label="Lista de jogos para Xbox 360">
+        <div class="catalog-controls">
+          <label class="search-field" for="busca-xbox">
+            <span aria-hidden="true">⌕</span>
+            <input id="busca-xbox" data-catalog-search type="search" placeholder="Buscar por nome ou gênero" autocomplete="off">
+          </label>
+        </div>
+
+        <div class="filter-row" data-catalog-filters aria-label="Filtrar jogos por gênero"></div>
+
+        <div class="catalog-meta">
+          <div class="catalog-summary"><span data-catalog-counter></span><span data-catalog-page-info></span></div>
+        </div>
+
+        <div class="inventory-grid inventory-grid-games" data-catalog-grid></div>
+        <p class="inventory-empty" data-catalog-empty hidden>Nenhum jogo encontrado nesta busca.</p>
+        <nav class="pagination" data-catalog-pagination aria-label="Navegação das páginas de jogos Xbox 360"></nav>
+      </section>
+    </main>
+    <footer class="catalog-footer"><span>STOPGAMES · XBOX 360</span><span>Capas exibidas são versões originais de Xbox 360.</span></footer>
+
+    <a class="whatsapp-float" href="https://wa.me/5551999360384?text=Ol%C3%A1%21%20Vim%20pelo%20cat%C3%A1logo%20da%20StopGames%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" aria-label="Conversar com a StopGames pelo WhatsApp" title="Falar pelo WhatsApp">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M19.11 17.21c-.27-.14-1.59-.78-1.84-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.15-.42-2.18-1.35-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47l-.52-.01c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27s.97 2.63 1.1 2.81c.14.18 1.91 2.92 4.63 4.1.65.28 1.15.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.59-.65 1.82-1.28.22-.63.22-1.17.16-1.28-.07-.11-.25-.18-.52-.32zM16.02 3.33c-7.01 0-12.69 5.68-12.69 12.69 0 2.23.58 4.4 1.68 6.31L3.22 28.8l6.63-1.74a12.65 12.65 0 0 0 6.17 1.6h.01c7 0 12.69-5.68 12.69-12.69S23.02 3.33 16.02 3.33zm0 23.2c-2.02 0-4-.54-5.73-1.57l-.41-.24-3.94 1.03 1.05-3.84-.27-.39a10.48 10.48 0 0 1-1.62-5.57c0-5.8 4.72-10.52 10.53-10.52s10.52 4.72 10.52 10.52-4.72 10.58-10.52 10.58z"/>
+      </svg>
+      <span class="sr-only">Falar pelo WhatsApp</span>
+    </a>
+
+    <script src="xbox-360-data.js"></script>
+    <script src="catalog-ui.js"></script>
+  </body>
+</html>
